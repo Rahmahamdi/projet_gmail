@@ -1,5 +1,7 @@
 
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
 html{
 font-size: 62.5%;
@@ -39,37 +41,49 @@ position: relative;
 height: 100vh;
 }
 
-header {
-    display: flex;
+header{
+    line-height: 4.5rem;
+    background: #fff;
+    position: fixed;
     width: 100%;
-    background-color: white;
-    justify-content: space-between;
+    z-index: 2;
 }
- header h1 {
-    font-size: 24px;
-    margin-right: 5rem;
-    vertical-align: bottom;
-    margin-top: 5rem;
-}
-header h1 img {
-    vertical-align: bottom;
-}
-
-
-
 nav {
- padding-top: 2rem;
-margin: 0;
-}
-nav ul  {
     display: flex;
-    flex-direction: row;
-
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+nav .log {
+    height: 5.0rem;
+    margin-right: 20px;
+}
 
+.title {
+    font-size: 20px;
+}
 
+.nav-but {
+    display: flex;
+    margin-left: auto;
+}
 
+.nav-but a {
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.nav-but a:hover {
+    background-color: #dd5347;
+    color: #fff;
+}
 
 section {
 position: absolute;
@@ -90,32 +104,7 @@ text-shadow: 0 0 .9rem #222;
 
 
 
-nav ul li {
-text-transform: uppercase;
-font-size: 18px;
-color: #000;
-border: none;
-cursor: pointer;
 
-
-}
-
-
-
-nav ul li a{
-    padding: 2rem;
-    font-family: 'Open Sans', sans-serif;
-    color: #787676;
-    transition: all .3s ease-in-out;
-    
-}
-
-
-nav ul a:hover {
-background-color: #dd5347;
-border-radius: 5px;
-color: #fff;
-}
 
 section a{
 text-transform: uppercase;
